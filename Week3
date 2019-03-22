@@ -1,0 +1,15 @@
+#Q2
+import numpy as np
+a = np.arange(15)
+b=a+1
+c=b.reshape(3,5)
+d=c.transpose()
+
+print(d[1:2], d[3:4])
+
+#Q3
+import numpy as np
+def inner(y,x):
+a=np.ones(y*x).reshape(y,x)
+a[1:y-1,1:x-1]=0
+return a
